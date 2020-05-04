@@ -1,4 +1,4 @@
-# Baukus-Nauer Form
+# Bakus-Naur Form
 
 
 BNF lets you write a grammar.

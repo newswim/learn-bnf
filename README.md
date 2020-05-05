@@ -112,6 +112,32 @@ int leading_digit(char* input) {
 
 ```
 
+```raw
+<expression> ::= <number>
+               | <number> <operator> <expression>
+               | <lparen> <number> <operator> <expression> <rparen>
+
+<number> ::= <digit> | <leading-digit> <digits>
+
+<digits> ::= <digit> | <digit> <digits>
+
+<operator> ::= "+" | "*"
+
+<digit> ::= "0" | <leading-digit>
+
+<leading-digit>  ::= "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+
+<lparen> ::= "("
+
+<rparen> ::= ")"
+
+```
+
+This language is context-free, whereas the earlier language was simply regular.
+
+
 # Resources
 
 - https://baturin.org/tools/bnfgen
+- https://tomcopeland.blogs.com/EcmaScript.html
+- http://www.ccs.neu.edu/home/dherman/javascript
